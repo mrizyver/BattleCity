@@ -26,7 +26,9 @@ public class Tile extends Entity
         SPAWN("*"),
         ICE("i"),
         TREES("t"),
-        WATER("W");
+        WATER("W"),
+        PLAYER_SPAWN("player_spawn"),
+        ENEMY_SPAWN("enemy_spawn");
 
         public final String id;
 
