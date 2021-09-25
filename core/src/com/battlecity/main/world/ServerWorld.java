@@ -361,7 +361,7 @@ public class ServerWorld extends World
     private class ServerSpawner
     {
 
-        private static final int MAX_CONCURRENT_SPAWNS = 4;
+        private static final int MAX_CONCURRENT_SPAWNS = 20;
 
         private int[] spawnList = null;
         private Task spawnTimer = null;
