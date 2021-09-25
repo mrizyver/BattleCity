@@ -44,9 +44,9 @@ public abstract class Presets
     public static final String MOD_EXTENSION = ".bcm";
     public static final int MOD_ID_START = 36;
 
-    public static final String TEXTURE_ENTITIES = "data/entity/";
-    public static final String TEXTURE_UI = "data/ui/";
-    public static final String SOUNDS = "data/sfx/";
+    public static final String TEXTURE_ENTITIES = "core/assets/data/entity/";
+    public static final String TEXTURE_UI = "core/assets/data/ui/";
+    public static final String SOUNDS = "core/assets/data/sfx/";
 
     public static final int TILE_REGIONS = 4;
     public static final int TILE_FULL_SIZE = 16;

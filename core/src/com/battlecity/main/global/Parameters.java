@@ -85,7 +85,7 @@ public final class Parameters
         FileHandle fh = Gdx.files.local("input.json");
 
         if(!fh.exists()) {
-            fh = Gdx.files.internal("data/input.json");
+            fh = Gdx.files.internal("core/assets/data/input.json");
             if(Presets.debugOn)
                 System.out.println("Loading internal input.json");
         }

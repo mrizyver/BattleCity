@@ -64,7 +64,7 @@ public class ScreenMainMenu extends GameScreen
     private STATE state = STATE.SELECTION;
     private String ipAdress = "";
     private final Sound snd = Gdx.audio.newSound(Gdx.files.internal(
-            "data/sfx/song.ogg"));
+            "core/assets/data/sfx/song.ogg"));
 
     private final String creditsText;
 
@@ -84,7 +84,7 @@ public class ScreenMainMenu extends GameScreen
         if(Parameters.startingLevel <= 0)
             Parameters.startingLevel = 1;
 
-        creditsText = Gdx.files.internal("data/eula").readString();
+        creditsText = Gdx.files.internal("core/assets/data/eula").readString();
         Presets.MOD_PATH.mkdirs();
         scanForMods();
 

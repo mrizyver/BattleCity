@@ -11,9 +11,10 @@ public class DesktopLauncher {
     public static void main(String[] arg) {
         LwjglApplicationConfiguration config
                 = new LwjglApplicationConfiguration();
-        config.addIcon("data/ui/icon128x.png", Files.FileType.Internal);
-        config.addIcon("data/ui/icon32x.png", Files.FileType.Internal);
-        config.addIcon("data/ui/icon16x.png", Files.FileType.Internal);
+
+        config.addIcon("core/assets/data/ui/icon128x.png", Files.FileType.Internal);
+        config.addIcon("core/assets/data/ui/icon32x.png", Files.FileType.Internal);
+        config.addIcon("core/assets/data/ui/icon16x.png", Files.FileType.Internal);
         config.resizable = true;
         config.forceExit = true;
         config.width = Presets.SCREEN_WIDTH;

@@ -13,7 +13,7 @@ import com.battlecity.main.sound.SoundFX;
 public class ScreenGameOver extends GameScreen {
 
     private final Texture texture = new Texture(Gdx.files.internal(
-            "data/ui/game_over.png"));
+            "core/assets/data/ui/game_over.png"));
     private final SoundFX gameOverSound = new SoundFX("gameover.ogg");
 
     private int timeElapsed = 0;

@@ -22,8 +22,8 @@ public class ScreenScore extends GameScreen
 {
 
     private final Texture texture = Parameters.mode == BaseLevel.Mode.ARCADE ? new Texture(Gdx.files.internal(
-                                    "data/ui/score_screen.png")) : new Texture(Gdx.files.internal(
-                                    "data/ui/score_screen_dm.png"));
+                                    "core/assets/data/ui/score_screen.png")) : new Texture(Gdx.files.internal(
+                                    "core/assets/data/ui/score_screen_dm.png"));
     private final SoundFX scoring = new SoundFX("scoring.ogg");
 
     private int countA = 0;

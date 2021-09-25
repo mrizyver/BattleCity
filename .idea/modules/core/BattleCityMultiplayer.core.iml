@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":core" external.linked.project.path="$MODULE_DIR$/../../../core" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="BattleCityMultiplayer" external.system.module.version="v1.5-20210925" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../core/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/../../../core/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../core">
+      <sourceFolder url="file://$MODULE_DIR$/../../../core/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../core/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../core/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype:1.9.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.ashley:ashley:1.7.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-controllers:1.9.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.9.3" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: kryonet-2.21-all">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../core/libs/kryonet-2.21-all.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
