@@ -67,9 +67,13 @@ public abstract class BaseLevel implements IRenderable
                 Tile.TileType tileType = tileTypesRandValue[rand.nextInt(tileTypesRandValue.length)];
                 Tile.RegionType regionType = regionTypesRandValues[rand.nextInt(regionTypesRandValues.length)];
 
-                if (i == 0 && j == 0) {
+                if (
+                    (i == 2 && j == 2) ||
+                    (i == 2 && j == Presets.MAX_TILE_HORIZONTAL -3) ||
+                    (i == Presets.MAX_TILE_VERTICAL -3 && j == 3) ||
+                    (i == Presets.MAX_TILE_VERTICAL -3 && j == Presets.MAX_TILE_HORIZONTAL -3)
+                ) {
                     tileType = TileType.ENEMY_SPAWN;
-                    regionType = Tile.RegionType.FULL;
                 }
 
                 // first eagle
