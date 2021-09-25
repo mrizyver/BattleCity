@@ -18,10 +18,9 @@
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype-platform:1.9.3:natives-desktop" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-controllers-desktop:1.9.3" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-controllers-platform:1.9.3:natives-desktop" level="project" />
-    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype:1.9.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.badlogicgames.ashley:ashley:1.7.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-controllers:1.9.3" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-backend-headless:1.9.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-freetype:1.9.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-controllers:1.9.3" level="project" />
     <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.9.3" level="project" />
     <orderEntry type="library" name="Gradle: org.lwjgl.lwjgl:lwjgl_util:2.9.2" level="project" />
     <orderEntry type="library" name="Gradle: org.lwjgl.lwjgl:lwjgl:2.9.2" level="project" />
@@ -32,12 +31,89 @@
     <orderEntry type="library" name="Gradle: org.lwjgl.lwjgl:lwjgl-platform:2.9.2:natives-osx" level="project" />
     <orderEntry type="library" name="Gradle: net.java.jinput:jinput:2.0.5" level="project" />
     <orderEntry type="library" name="Gradle: net.java.jutils:jutils:1.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: kryonet-2.21-all" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.badlogicgames.ashley:ashley:1.7.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.firebase:firebase-database:20.0.2:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.firebase:firebase-appcheck-interop:16.0.0-beta02:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.firebase:firebase-auth-interop:19.0.2:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.firebase:firebase-common:20.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.firebase:firebase-components:17.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.firebase:firebase-database-collection:18.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.android.gms:play-services-base:17.1.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.android.gms:play-services-tasks:17.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.android.gms:play-services-basement:17.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.fragment:fragment:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.loader:loader:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.viewpager:viewpager:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.drawerlayout:drawerlayout:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.customview:customview:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.core:core:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.collection:collection:1.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.lifecycle:lifecycle-common:2.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.arch.core:core-runtime:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.arch.core:core-common:2.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.interpolator:interpolator:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.documentfile:documentfile:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.print:print:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: androidx.annotation:annotation:1.1.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.jinput:jinput-platform:2.0.5:natives-linux" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.jinput:jinput-platform:2.0.5:natives-windows" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: net.java.jinput:jinput-platform:2.0.5:natives-osx" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.firebase:firebase-annotations:16.0.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: kryonet-2.21-all" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.badlogicgames.ashley:ashley:1.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database:20.0.2:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-appcheck-interop:16.0.0-beta02:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-auth-interop:19.0.2:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-common:20.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-components:17.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-database-collection:18.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-base:17.1.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-tasks:17.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-basement:17.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.fragment:fragment:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.loader:loader:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager:viewpager:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.drawerlayout:drawerlayout:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.customview:customview:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-runtime:2.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-common:2.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.interpolator:interpolator:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.documentfile:documentfile:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.print:print:1.0.0:aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: net.java.jinput:jinput-platform:2.0.5:natives-linux" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: net.java.jinput:jinput-platform:2.0.5:natives-windows" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: net.java.jinput:jinput-platform:2.0.5:natives-osx" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-annotations:16.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: kryonet-2.21-all" level="project" />
   </component>
 </module>
