@@ -54,13 +54,11 @@ public class Level01 extends BaseLevel
 
     @Override
     public int[] getLevelSpawnlistData() {
-        int[] spawnList = new int[]{
-                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
-                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
-                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
-                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2
-        };
-        return spawnList;
+        int[] array = new int[100];
+        Random r = new Random();
+        for (int i = 0; i < 100; i++) {
+            array[i] = r.nextInt() % 5;
+        }
+        return array;
     }
-
 }
