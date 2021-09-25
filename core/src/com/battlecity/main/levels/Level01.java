@@ -23,10 +23,10 @@ public class Level01 extends BaseLevel
                 Tile.TileType tileType = Tile.TileType.values()[rand.nextInt(Tile.TileType.values().length)];
                 Tile.RegionType regionType = Tile.RegionType.values()[rand.nextInt(Tile.RegionType.values().length)];
 
-                if (tileType.id == Tile.TileType.EAGLE.id) {
+                if (tileType.id.equals(Tile.TileType.EAGLE.id)) {
                     tileType = Tile.TileType.BRICKS;
                 }
-                if (tileType.id == Tile.TileType.EAGLE_WALL.id) {
+                if (tileType.id.equals(Tile.TileType.EAGLE_WALL.id)) {
                     tileType = Tile.TileType.BRICKS;
                 }
 
@@ -49,7 +49,7 @@ public class Level01 extends BaseLevel
                     tileType = Tile.TileType.EAGLE;
                 }
 
-                if (tileType.id == Tile.TileType.WATER.id) {
+                if (tileType.id.equals(Tile.TileType.WATER.id)) {
                     regionType = Tile.RegionType.FULL;
                 }
 
