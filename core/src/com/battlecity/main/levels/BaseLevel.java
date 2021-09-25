@@ -74,8 +74,8 @@ public abstract class BaseLevel implements IRenderable
         ArrayList<Tile> map = this.generateTiles();
 
         for(Tile tile : map) {
-            if(playerSpawns.size < 2) {
-                if(tile.tileID == 160 || tile.tileID == 164) {
+            if(playerSpawns.size < 4) {
+                if(tile.tileID != 0 && (tile.tileID % 97) == 0 ) {
                     playerSpawns.add(tile);
 
                     if(tile.getTileType() != TileType.AIR && tile.getTileType() != TileType.ICE && tile.getTileType() != TileType.TREES) {
@@ -85,7 +85,7 @@ public abstract class BaseLevel implements IRenderable
             }
 
             if(enemySpawns.size < 27) {
-                if((tile.tileID % 131) == 0 ) {
+                if(tile.tileID != 0 && (tile.tileID % 131) == 0 ) {
                     enemySpawns.add(tile);
 
                     if(tile.getTileType() != TileType.AIR && tile.getTileType() != TileType.ICE && tile.getTileType() != TileType.TREES) {

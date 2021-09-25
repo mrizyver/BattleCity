@@ -20,8 +20,8 @@ public class Level01 extends BaseLevel
 
         for (int i = 0; i < Presets.MAX_TILE_VERTICAL; i++) {
             for (int j = 0; j < Presets.MAX_TILE_HORIZONTAL; j++) {
-                Tile.TileType tileType = Tile.TileType.values()[rand.nextInt(Tile.TileType.values().length -1)];
-                Tile.RegionType regionType = Tile.RegionType.values()[rand.nextInt(Tile.RegionType.values().length -1)];
+                Tile.TileType tileType = Tile.TileType.values()[rand.nextInt(Tile.TileType.values().length)];
+                Tile.RegionType regionType = Tile.RegionType.values()[rand.nextInt(Tile.RegionType.values().length)];
 
                 if (tileType.id == Tile.TileType.EAGLE.id) {
                     tileType = Tile.TileType.BRICKS;
@@ -31,8 +31,9 @@ public class Level01 extends BaseLevel
                 }
 
 
-                if (i < 5 && j < 5) {
-                    tileType = Tile.TileType.AIR;
+                if (i < 4 && j < 4) {
+                    tileType = Tile.TileType.EAGLE_WALL;
+                    regionType = Tile.RegionType.FULL;
                 }
 
                 if (i == 1 && j == 1) {

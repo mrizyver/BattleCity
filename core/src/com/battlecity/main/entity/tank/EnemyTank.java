@@ -287,7 +287,7 @@ public class EnemyTank extends Tank
 
             double r = Math.random();
 
-            if(0.9 > r) {
+            if(true) {
                 headTowardsBase();
             }
             else {
