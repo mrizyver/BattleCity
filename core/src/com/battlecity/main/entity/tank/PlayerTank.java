@@ -165,15 +165,7 @@ public final class PlayerTank extends Tank
 
     @Override
     public boolean isShooting() {
-        if(bulletInstances >= 500) {
-            return true;
-        }
-        else if(bulletInstances >= 1 && this.getTier() != Tier.THIRD && this.
-                getTier() == Tier.FOUR) {
-            return true;
-        }
-
-        return super.isShooting();
+        return false;
     }
 
     public void onEnemyKilled(Tier tier) {
