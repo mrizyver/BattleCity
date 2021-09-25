@@ -84,8 +84,8 @@ public abstract class BaseLevel implements IRenderable
                 }
             }
 
-            if(enemySpawns.size < 3) {
-                if(tile.tileID == 0 || tile.tileID == 6 || tile.tileID == 12) {
+            if(enemySpawns.size < 27) {
+                if((tile.tileID % 131) == 0 ) {
                     enemySpawns.add(tile);
 
                     if(tile.getTileType() != TileType.AIR && tile.getTileType() != TileType.ICE && tile.getTileType() != TileType.TREES) {

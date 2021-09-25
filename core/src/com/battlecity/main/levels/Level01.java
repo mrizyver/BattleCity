@@ -1,5 +1,10 @@
 package com.battlecity.main.levels;
 
+import com.battlecity.main.entity.tiles.Tile;
+import com.battlecity.main.global.Presets;
+
+import java.util.Random;
+
 /**
  *
  * @author Pablis
@@ -9,20 +14,34 @@ public class Level01 extends BaseLevel
 
     @Override
     public String[][] getTileArray() {
-        String[][] tiles = new String[][]{
-            {"x:F", "x:F", "x:F", "x:F", "x:F", "x:F", "x:F", "x:F", "x:F", "x:F", "x:F", "x:F", "x:F"},
-            {"x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F"},
-            {"x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F"},
-            {"x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "s:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F"},
-            {"x:F", "w:F", "x:F", "w:F", "x:F", "w:HU", "x:F", "w:HU", "x:F", "w:F", "x:F", "w:F", "x:F"},
-            {"x:F", "w:HU", "x:F", "w:HU", "x:F", "w:HD", "x:F", "w:HD", "x:F", "w:HU", "x:F", "w:HU", "x:F"},
-            {"w:HD", "x:F", "w:HD", "w:HD", "x:F", "w:HU", "x:F", "w:HU", "x:F", "w:HD", "w:HD", "x:F", "w:HD"},
-            {"s:HU", "x:F", "w:HU", "w:HU", "x:F", "w:HD", "x:F", "w:HD", "x:F", "w:HU", "w:HU", "x:F", "s:HU"},
-            {"x:F", "w:HD", "x:F", "w:HD", "x:F", "w:F", "w:F", "w:F", "x:F", "w:HD", "x:F", "w:HD", "x:F"},
-            {"x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F", "w:F", "x:F"},
-            {"x:F", "w:F", "x:F", "w:F", "x:F", "w:HU", "x:F", "w:HU", "x:F", "w:F", "x:F", "w:F", "x:F"},
-            {"x:F", "w:F", "x:F", "w:F", "x:F", "eW:SBR", "eW:HD", "eW:SBL", "x:F", "w:F", "x:F", "w:F", "x:F"},
-            {"x:F", "x:F", "x:F", "x:F", "x:F", "eW:HR", "e:F", "eW:HL", "x:F", "x:F", "x:F", "x:F", "x:F"}};
+        String[][] tiles = new String[Presets.MAX_TILE_VERTICAL][Presets.MAX_TILE_HORIZONTAL];
+
+        Random rand = new Random(-1881547168);
+
+        for (int i = 0; i < Presets.MAX_TILE_VERTICAL; i++) {
+            for (int j = 0; j < Presets.MAX_TILE_HORIZONTAL; j++) {
+                Tile.TileType tileType = Tile.TileType.values()[rand.nextInt(Tile.TileType.values().length -1)];
+                Tile.RegionType regionType = Tile.RegionType.values()[rand.nextInt(Tile.RegionType.values().length -1)];
+
+                if (tileType.id == Tile.TileType.EAGLE.id) {
+                    tileType = Tile.TileType.BRICKS;
+                }
+                if (tileType.id == Tile.TileType.EAGLE_WALL.id) {
+                    tileType = Tile.TileType.BRICKS;
+                }
+
+
+                if (i < 5 && j < 5) {
+                    tileType = Tile.TileType.AIR;
+                }
+
+                if (i == 1 && j == 1) {
+                    tileType = Tile.TileType.EAGLE;
+                }
+
+                tiles[i][j] = tileType.id + ":" + regionType.id;
+            }
+        }
 
         return tiles;
     }
@@ -35,7 +54,10 @@ public class Level01 extends BaseLevel
     @Override
     public int[] getLevelSpawnlistData() {
         int[] spawnList = new int[]{
-            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2,
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2
         };
         return spawnList;
     }

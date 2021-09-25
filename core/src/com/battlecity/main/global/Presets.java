@@ -79,8 +79,8 @@ public abstract class Presets
 
     public static final int NEW_LIFE_SCORE = 20000;
 
-    public static final int MAX_TILE_HORIZONTAL = 13;
-    public static final int MAX_TILE_VERTICAL = 13;
+    public static final int MAX_TILE_HORIZONTAL = 30;
+    public static final int MAX_TILE_VERTICAL = 30;
 
     public static final int SIDEBAR_WIDTH = 32;
     public static final int SIDEBAR_HEIGHT = 240;
