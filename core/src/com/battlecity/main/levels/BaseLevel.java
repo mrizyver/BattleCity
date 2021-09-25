@@ -72,26 +72,31 @@ public abstract class BaseLevel implements IRenderable
                     regionType = Tile.RegionType.FULL;
                 }
 
+                // first eagle
                 if ((i >= 10 && i <= 12) && (j >= 10 && j <= 12)) {
                     tileType = Tile.TileType.EAGLE_WALL;
                     regionType = Tile.RegionType.FULL;
                 }
-
                 if (i == 11 && j == 11) {
                     tileType = Tile.TileType.EAGLE;
                 }
-                if (i == 19 && j == 0) {
+                if (i == 11 && j == 14) {
                     tileType = TileType.PLAYER_SPAWN;
                 }
+
+                // second eagle
                 if ((i >= 10 && i <= 12) && (j >= 20 && j <= 22)) {
                     tileType = Tile.TileType.EAGLE_WALL;
                     regionType = Tile.RegionType.FULL;
                 }
-
                 if (i == 11 && j == 21) {
                     tileType = Tile.TileType.EAGLE;
                 }
+                if (i == 11 && j == 18) {
+                    tileType = TileType.PLAYER_SPAWN;
+                }
 
+                //water size fix
                 if (tileType.id.equals(Tile.TileType.WATER.id)) {
                     regionType = Tile.RegionType.FULL;
                 }
