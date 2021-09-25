@@ -402,7 +402,7 @@ public class ServerWorld extends World
                 }
             };
 
-            World.getTimerManager().scheduleTask(spawnTimer, 3000, 3000);
+            World.getTimerManager().scheduleTask(spawnTimer, 300, 300);
 
             if(Presets.debugOn) {
                 System.out.println("The world spawner has been started.");
