@@ -26,7 +26,7 @@ public final class Parameters
     public static final int JOYSTICK_CONSTANT = 255;
 
     public static String playerName = "Tank" + new Random().nextInt(100);
-    public static int playerLives = 2;
+    public static int playerLives = 20;
     public static int startingLevel = 1;
     public static boolean friendlyFire = false;
     public static float volume = 0.5f;
@@ -45,7 +45,7 @@ public final class Parameters
     public static void load() {
         playerName = PREFS.getString("playerName", playerName);
 //        startingLevel = PREFS.getInteger("startingLevel", 1);
-        playerLives = PREFS.getInteger("playerLives", 2);
+        playerLives = PREFS.getInteger("playerLives", 20);
         friendlyFire = PREFS.getBoolean("friendlyFire", false);
         randomEnemies = PREFS.getBoolean("randomEnemies", false);
         restrictJoin = PREFS.getBoolean("restrictJoin", true);
