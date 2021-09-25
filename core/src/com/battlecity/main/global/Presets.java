@@ -79,7 +79,7 @@ public abstract class Presets
 
     public static final int NEW_LIFE_SCORE = 20000;
 
-    public static final int MAX_TILE_HORIZONTAL = 30;
+    public static final int MAX_TILE_HORIZONTAL = (int) (30 * 1.77);
     public static final int MAX_TILE_VERTICAL = 30;
 
     public static final int SIDEBAR_WIDTH = 32;
@@ -88,8 +88,8 @@ public abstract class Presets
     public static final int WORLD_WIDTH = MAX_TILE_HORIZONTAL * TILE_FULL_SIZE;
     public static final int WORLD_HEIGHT = MAX_TILE_VERTICAL * TILE_FULL_SIZE;
 
-    public static final int SCREEN_WIDTH = 800;
-    public static final int SCREEN_HEIGHT = 699;
+    public static final int SCREEN_WIDTH = 1920;
+    public static final int SCREEN_HEIGHT = 1080;
 
     public static final int FRIENDLY_FIRE_FREEZE_TIME = 2500;
 
