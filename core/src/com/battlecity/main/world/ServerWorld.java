@@ -432,8 +432,7 @@ public class ServerWorld extends World
 
             EnemyTank enemy;
             int j = this.spawnList[enemiesSpawnedTotal];
-            boolean isPowerUpEnemy = enemiesSpawnedTotal == 4 ||
-                                     enemiesSpawnedTotal == 11 || enemiesSpawnedTotal == 18;
+            boolean isPowerUpEnemy = true;
 
             switch(j) {
                 default: {

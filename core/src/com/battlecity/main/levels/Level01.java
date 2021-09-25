@@ -31,13 +31,26 @@ public class Level01 extends BaseLevel
                 }
 
 
-                if (i < 4 && j < 4) {
+                if ((i >= 10 && i <= 12) && (j >= 10 && j <= 12)) {
                     tileType = Tile.TileType.EAGLE_WALL;
                     regionType = Tile.RegionType.FULL;
                 }
 
-                if (i == 1 && j == 1) {
+                if (i == 11 && j == 11) {
                     tileType = Tile.TileType.EAGLE;
+                }
+
+                if ((i >= 20 && i <= 22) && (j >= 20 && j <= 22)) {
+                    tileType = Tile.TileType.EAGLE_WALL;
+                    regionType = Tile.RegionType.FULL;
+                }
+
+                if (i == 21 && j == 21) {
+                    tileType = Tile.TileType.EAGLE;
+                }
+
+                if (tileType.id == Tile.TileType.WATER.id) {
+                    regionType = Tile.RegionType.FULL;
                 }
 
                 tiles[i][j] = tileType.id + ":" + regionType.id;
