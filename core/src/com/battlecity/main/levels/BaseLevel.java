@@ -57,7 +57,7 @@ public abstract class BaseLevel implements IRenderable
     {
         String[][] tiles = new String[Presets.MAX_TILE_VERTICAL][Presets.MAX_TILE_HORIZONTAL];
 
-        Random rand = new Random(-1881547168);
+        Random rand = new Random(13);
 
         Tile.TileType[] tileTypesRandValue = { TileType.BRICKS, TileType.AIR, TileType.ICE, TileType.TREES, TileType.WALL, TileType.WATER };
         Tile.RegionType[] regionTypesRandValues = Tile.RegionType.values();
@@ -68,10 +68,10 @@ public abstract class BaseLevel implements IRenderable
                 Tile.RegionType regionType = regionTypesRandValues[rand.nextInt(regionTypesRandValues.length)];
 
                 if (
-                    (i == 2 && j == 2) ||
-                    (i == 2 && j == Presets.MAX_TILE_HORIZONTAL -3) ||
-                    (i == Presets.MAX_TILE_VERTICAL -3 && j == 3) ||
-                    (i == Presets.MAX_TILE_VERTICAL -3 && j == Presets.MAX_TILE_HORIZONTAL -3)
+                    (i == 4 && j == 4) ||
+                    (i == 4 && j == Presets.MAX_TILE_HORIZONTAL -4) ||
+                    (i == Presets.MAX_TILE_VERTICAL -4 && j == 4) ||
+                    (i == Presets.MAX_TILE_VERTICAL -4 && j == Presets.MAX_TILE_HORIZONTAL -4)
                 ) {
                     tileType = TileType.ENEMY_SPAWN;
                 }
